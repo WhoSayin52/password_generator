@@ -87,12 +87,14 @@ button:active {
     border-radius: 6px;
 
     background-color: var(--light-navy-blue);
+    transition: background-color 0.5s ease-out;
 
     color: var(--light-green);
 }
 
-#include-symbols-checkbox {
-    border: black;
+.output-field:active {
+    background-color: var(--dark-green);
+    transition: none;
 }
 
 .options label {
