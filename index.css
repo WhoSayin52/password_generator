@@ -1,3 +1,91 @@
-body {
+:root {
+    --dark-navy-blue: #1F2937;
+    --light-navy-blue: #273549;
+    --dark-green: #10B981;
+    --light-green: #55F991;
+    --medium-grey: #D5D4D8;
+    --white: #EEEEEE;
+}
+
+* {
+    padding: 0;
     margin: 0;
+    border: none;
+}
+
+body {
+    background-color: var(--dark-navy-blue);
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+p {
+    margin: 0.625rem 0;
+
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--medium-grey);
+}
+
+button {
+    margin: 2.2rem 0;
+    padding: 0.6rem 1rem;
+
+    background-color: var(--dark-green);
+
+    border-radius: 6px;
+
+    color: var(--white);
+    text-shadow: 0 0 3px black;
+}
+
+button:active {
+    scale: 99%;
+}
+
+.container {
+    max-width: 80%;
+
+    margin: 60px auto;
+}
+
+.title {
+    font-family: Karla;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.title span {
+    color: var(--dark-green)
+}
+
+.separator {
+    border: 1px solid var(--light-navy-blue);
+}
+
+.passwords {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 37rem;
+    min-height: 3rem;
+
+    gap: 1.5rem;
+
+    margin: 2.2rem 0;
+}
+
+.output-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+
+    border-radius: 6px;
+
+    background-color: var(--light-navy-blue);
+
+    color: var(--light-green);
 }
