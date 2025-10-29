@@ -14,11 +14,17 @@
     <div class="container">
         <h1 class="title">Generate a <span>random password</span></h1>
         <p>Never use an insecure password again.</p>
-        <button>Generate passwords</button>
+        <button id="password-generate-btn" onclick="generatePassword()">Generate passwords</button>
         <hr class="separator">
         <div class="passwords">
             <span class="output-field left"></span>
             <span class="output-field right"></span>
+        </div>
+        <div class="options">
+            <input id="include-numbers-checkbox" type="checkbox">
+            <label for="include-numbers-checkbox">numbers</label>
+            <input id="include-symbols-checkbox" type="checkbox">
+            <label for="include-symbols-checkbox">symbols</label>
         </div>
     </div>
     <script src="index.js"></script>
