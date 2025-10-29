@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +18,8 @@
         <button id="password-generate-btn" onclick="generatePassword()">Generate passwords</button>
         <hr class="separator">
         <div class="passwords">
-            <span class="output-field left"></span>
-            <span class="output-field right"></span>
+            <span class="output-field left" onclick="copyToClipboard(outputElLeft.textContent)"></span>
+            <span class="output-field right" onclick="copyToClipboard(outputElRight.textContent)"></span>
         </div>
         <div class="options">
             <input id="include-numbers-checkbox" type="checkbox">

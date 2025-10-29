@@ -30,10 +30,10 @@ function generatePassword() {
 
 		if (hasSymbols === true && hasNumbers === false) {
 			if (leftIndex >= 52 && leftIndex <= 61) {
-				leftIndex += 10
+				leftIndex += 10;
 			}
 			if (rightIndex >= 52 && rightIndex <= 61) {
-				rightIndex += 10
+				rightIndex += 10;
 			}
 		}
 
@@ -46,4 +46,8 @@ function generatePassword() {
 
 function generateRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function copyToClipboard(password) {
+	navigator.clipboard.writeText(password);
 }
